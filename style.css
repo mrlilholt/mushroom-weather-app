@@ -105,3 +105,17 @@ button:hover {
         width: 100%; /* Full width button */
     }
 }
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply animation to weather display */
+#weather-display {
+    animation: fadeIn 1s ease-in-out;
+}
