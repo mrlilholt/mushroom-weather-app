@@ -1,0 +1,107 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Google-like font */
+    margin: 0;
+    padding: 0;
+    background: #FAFAFA; /* Light neutral background */
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #4285F4; /* Google blue */
+    color: white;
+    padding: 20px 10px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/* Main container */
+main {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Search container */
+#search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Mobile-friendly wrapping */
+}
+
+#location {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    width: calc(100% - 120px); /* Adjust for button width */
+    max-width: 400px;
+    box-sizing: border-box; /* Ensure proper padding */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 100px;
+}
+
+button:hover {
+    background-color: #357AE8; /* Slightly darker blue */
+}
+
+/* Weather display container */
+#weather-display {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+    width: 100%; /* Responsive width */
+}
+
+#weather-display h2 {
+    margin-top: 0;
+    font-size: 1.25em;
+    color: #333;
+}
+
+#weather-display p {
+    margin: 5px 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+#weather-display img {
+    display: block;
+    margin: 10px auto 0 auto;
+    max-width: 100%; /* Ensure responsiveness */
+    border-radius: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #search-container {
+        flex-direction: column; /* Stack input and button */
+    }
+
+    #location {
+        width: 100%; /* Full width on small screens */
+    }
+
+    button {
+        width: 100%; /* Full width button */
+    }
+}
