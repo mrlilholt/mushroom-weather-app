@@ -1,10 +1,10 @@
 /* General styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Google-like font */
+    font-family: 'Calistoga', sans-serif; /* Switch to Calistoga font */
     margin: 0;
     padding: 0;
     background: #FAFAFA; /* Light neutral background */
-    color: #333;
+    color: #333333; /* Dark gray text */
     text-align: center;
 }
 
@@ -16,20 +16,18 @@ header {
     text-align: center;
     background: url('images/mushroom-background.webp') no-repeat center center;
     background-size: cover; /* Ensures the background fills the header */
-    color: white;
+    color: #333333; /* Dark gray title text */
     padding: 40px 20px;
     font-size: 1.5em;
 }
 
 header h1 {
-    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8), /* Frosty glow */
-                 0 0 10px rgba(255, 255, 255, 0.6), /* Outer glow */
-                 0 0 20px rgba(255, 255, 255, 0.4); /* Subtle spread */
+    text-shadow: none; /* Remove frosty glow for clean, dark text */
     font-size: 2.5em; /* Slightly larger font size for impact */
     margin: 0;
     padding: 0;
+    color: #333333; /* Ensure header text is also dark gray */
 }
-
 
 /* Main container */
 main {
@@ -56,13 +54,14 @@ main {
     width: calc(100% - 120px); /* Adjust for button width */
     max-width: 400px;
     box-sizing: border-box; /* Ensure proper padding */
+    color: #333333; /* Dark gray input text */
 }
 
 button {
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #4285F4;
-    color: white;
+    background-color: #333333; /* Dark gray button */
+    color: white; /* White text for contrast */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -71,7 +70,7 @@ button {
 }
 
 button:hover {
-    background-color: #357AE8; /* Slightly darker blue */
+    background-color: #555555; /* Slightly lighter gray on hover */
 }
 
 /* Weather display container */
@@ -84,18 +83,20 @@ button:hover {
     margin: 20px auto;
     max-width: 600px;
     width: 100%; /* Responsive width */
+    color: #333333; /* Ensure all text is dark gray */
 }
 
 #weather-display h2 {
     margin-top: 0;
     font-size: 1.25em;
-    color: #333;
+    color: #333333; /* Dark gray headings */
 }
 
 #weather-display p {
     margin: 5px 0;
     font-size: 1em;
     line-height: 1.5;
+    color: #333333; /* Dark gray paragraph text */
 }
 
 #weather-display img {
@@ -119,6 +120,7 @@ button:hover {
         width: 100%; /* Full width button */
     }
 }
+
 /* Fade-in animation */
 @keyframes fadeIn {
     from {
