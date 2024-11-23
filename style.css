@@ -14,7 +14,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('images/mushroom-background.png') no-repeat center center;
+    background: url('images/mushroom-background.webp') no-repeat center center;
     background-size: cover; /* Ensures the background fills the header */
     color: white;
     padding: 40px 20px;
