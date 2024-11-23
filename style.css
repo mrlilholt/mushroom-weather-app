@@ -22,7 +22,7 @@ header {
 }
 
 header h1 {
-    text-shadow: none; /* Remove frosty glow for clean, dark text */
+    text-shadow: 10; /* Remove frosty glow for clean, dark text */
     font-size: 2.5em; /* Slightly larger font size for impact */
     margin: 0;
     padding: 0;
