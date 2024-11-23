@@ -19,10 +19,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const mushroomImages = {
     chanterelle: "images/chanterelle.webp",
+    chicken: "images/chicken-of-the-woods.webp",
     oyster: "images/oyster.webp",
+    enoki: "images/enoki.webp",
+    winterChanterelle: "images/winter-chanterelle.webp",
+    blewit: "images/blewit.webp",
+    shiitake: "images/shiitake.webp",
+    puffball: "images/puffball.webp",
     noMushroom: "images/no-mushrooms.webp",
     tooDry: "images/dry.webp"
 };
+
 
 const mushroomData = [
     {
@@ -37,6 +44,17 @@ const mushroomData = [
         message: "Chanterelles thrive in warm, humid conditions, typically in summer and fall."
     },
     {
+        name: "Chicken of the Woods",
+        season: ["summer", "fall"],
+        idealConditions: {
+            minTemp: 15,
+            maxTemp: 30,
+            minHumidity: 60
+        },
+        image: mushroomImages.chicken,
+        message: "Chicken of the Woods loves warm, moist forests. Look on decaying logs!"
+    },
+    {
         name: "Oyster Mushroom",
         season: ["spring", "fall", "winter"],
         idealConditions: {
@@ -48,15 +66,59 @@ const mushroomData = [
         message: "Oyster mushrooms prefer cool to moderate temperatures and moist environments."
     },
     {
-        name: "No Mushrooms",
-        season: ["all"],
+        name: "Enoki",
+        season: ["winter"],
         idealConditions: {
-            minTemp: -Infinity,
-            maxTemp: Infinity,
-            minHumidity: 0
+            minTemp: 0,
+            maxTemp: 10,
+            minHumidity: 60
         },
-        image: mushroomImages.noMushroom,
-        message: "Conditions are not suitable for mushrooms right now. Check back later!"
+        image: mushroomImages.enoki,
+        message: "Enoki mushrooms thrive in cold, humid conditions. Perfect for winter foraging!"
+    },
+    {
+        name: "Winter Chanterelle",
+        season: ["fall", "winter"],
+        idealConditions: {
+            minTemp: 0,
+            maxTemp: 12,
+            minHumidity: 70
+        },
+        image: mushroomImages.winterChanterelle,
+        message: "Winter Chanterelles love chilly, wet environments. Look in mossy areas!"
+    },
+    {
+        name: "Blewit",
+        season: ["fall", "winter"],
+        idealConditions: {
+            minTemp: 5,
+            maxTemp: 15,
+            minHumidity: 65
+        },
+        image: mushroomImages.blewit,
+        message: "Blewits thrive in cool, moist leaf litter. A beautiful purple find in cold months!"
+    },
+    {
+        name: "Shiitake",
+        season: ["spring", "fall"],
+        idealConditions: {
+            minTemp: 5,
+            maxTemp: 18,
+            minHumidity: 60
+        },
+        image: mushroomImages.shiitake,
+        message: "Shiitake mushrooms love cool, damp logs. A forager's delight!"
+    },
+    {
+        name: "Puffball",
+        season: ["spring", "fall"],
+        idealConditions: {
+            minTemp: 5,
+            maxTemp: 20,
+            minHumidity: 55
+        },
+        image: mushroomImages.puffball,
+        message: "Puffballs thrive in open, damp fields after rain."
     }
 ];
 
